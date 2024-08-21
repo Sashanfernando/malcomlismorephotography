@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Malcolm Lismore Photography</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../logo1.jpeg" alt="Malcolm Lismore Photography">
+           
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="about-page">
+    <section class="about-content">
+        <h2>About Malcolm Lismore Photography</h2>
+        <p>Welcome to the captivating world of Malcolm Lismore Photography, where the beauty of nature meets the art of the lens. Located on the stunning North West coast of Scotland, I, Malcolm Lismore, am a freelance photographer deeply passionate about capturing the wonders of the natural world.</p>
+        <p>My lens tells stories of the rugged Scottish landscape, with its breathtaking highlands, serene lochs, and dramatic cliffs. Through my photography, you'll discover the untamed beauty of this enchanting region, where each frame is a testament to the wild and awe-inspiring landscapes that define Scotland.</p>
+        <p>But my lens doesn’t stop at landscapes alone. I also have a profound love for the wildlife that calls this place home. From the elusive red deer to the majestic golden eagle, my photographs bring you face-to-face with the fascinating creatures that inhabit Scotland's wilderness.</p>
+        <p>Beyond the realm of nature, I am equally skilled in the art of capturing life's most precious moments. Whether it's your special day, a family portrait, or a milestone event, my lens is ready to preserve those cherished memories for a lifetime.</p>
+        <p>Feel free to explore my website, and if you’re looking for a photographer who can turn moments into art, don’t hesitate to reach out. From weddings to wildlife, landscapes to portraits, Malcolm Lismore Photography is your gateway to the beauty that surrounds us.</p>
+        <p>Thank you for visiting, and I hope you find inspiration and joy in the images I’ve had the privilege to capture.</p>
+    </section>
+    <aside class="about-image">
+        <img src="../../lismore2.png" alt="Malcolm Lismore">
+    </aside>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-nav">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/malcolmphotographer" target="_blank"><i class="ri-facebook-fill"></i></a>
+                <a href="https://web.facebook.com/messages/t/280340858743797" target="_blank"><i class="ri-messenger-fill"></i></a>
+                <a href="https://www.instagram.com/malcolm_photography/e" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.linkedin.com/in/sashan-fernando-b91a71235/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Details</h4>
+            <p>Email: <a href="mailto:samithasashan2002@gmail.com">malcolmlismore@gmail.com</a></p>
+            <p>Phone: <a href="tel:+94721362773">+44 1234 567890</a></p>
+            <p>Address: 123 Photography Lane, North West Coast, Scotland</p>
+        </div>
+        <div class="footer-contact-form">
+            <h4>Contact Us</h4>
+            <form id="footer-contact-form">
+                <input type="email" name="user_email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Malcolm Lismore Photography. All rights reserved.</p>
+        <p>Designed by <a href="https://www.linkedin.com/in/sashan-fernando-b91a71235/" target="_blank">Sashan Fernando</a></p>
+    </div>
+  </footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("zRUyhECI3G-_bQHRf"); 
+  })();
+
+  document.getElementById('footer-contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    emailjs.sendForm('service_yrui98i', 'template_y6xaipk', this)
+      .then(function(response) {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send the message. Please try again.');
+      });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #726a7c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('../../landscape9.jpg') no-repeat center center/cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1824;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1824;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Lexend Exa', sans-serif;
+    color: #fff;
+    padding: 10px 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #ff9e0d; 
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #ff9e0d; 
+}
+
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 158, 13, 0.1); 
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav ul li a:hover::after {
+    opacity: 1;
+}
+
+.contact-page {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-page h2 {
+    color: #e87c4c;
+    margin-bottom: 20px;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-page form button {
+    padding: 10px;
+    background-color: #e87c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-page form button:hover {
+    background-color: #d66b3f;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p a {
+    color: #e87c4c;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1f1824;
+    padding: 60px;
+    text-align: center;
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 0 10px 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    background: #ff9e0d;
+}
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+    display: inline-block;
+}
+
+footer .social-icons a::before, footer .social-icons a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+footer .social-icons a::before {
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(0);
+}
+
+footer .social-icons a::after {
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+}
+
+footer .social-icons a:hover {
+    color: #ff9e0d;
+    transform: scale(1.2);
+}
+
+footer .social-icons a:hover::before {
+    transform: scale(1.3);
+    opacity: 0.1;
+}
+
+footer .social-icons a:hover::after {
+    width: 200%;
+    height: 200%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-page {
+        padding: 20px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

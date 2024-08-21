@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard - Edit Enquiry</title>
+  <link rel="stylesheet" href="../css/edit-enquiry.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="../../logo1.jpeg" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="services.html" class="dropbtn">Services</a>
+        <div class="dropdown-content">
+          <a href="services.html">Weddings</a>
+          <a href="services.html">Portraits</a>
+          <a href="services.html">Special Events</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="gallery.html" class="dropbtn">Gallery</a>
+        <div class="dropdown-content">
+          <a href="gallery.html">Landscape</a>
+          <a href="gallery.html">Wildlife</a>
+          <a href="gallery.html">Coastal Bird</a>
+        </div>
+      </li>
+      <li><a href="login.html">Sign Out</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="dashboard">
+  <aside class="sidebar">
+    <ul>
+      <li><a href="create-enquiry.html">Create a new Enquiry</a></li>
+      <li><a href="../view-enquiry.php">Submitted Enquiries</a></li>
+      <li><a href="edit-enquiry.html">Edit existing Enquiries</a></li>
+      <li><a href="add-testimonials.html">Submit a Testimonial</a></li>
+      <li><a href="edit-user.html">Edit User Profile</a></li>
+      <li><a href="view-map.html">View Google Maps</a></li>
+    </ul>
+  </aside>
+
+  <section class="content">
+    <h2>Edit Enquiry</h2>
+    <form class="edit-enquiry-form" action="../edit_inquiry.php" method="post">
+      <label for="id">ID</label>
+      <input type="text" id="id" name="id" placeholder="Your ID" required>
+      
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
+      <label for="contact-no">Contact No</label>
+      <input type="text" id="contact-no" name="contact_no" placeholder="Your Contact Number" required>
+      
+      <label for="type-of-job">Type of Job</label>
+      <div class="job-type">
+          <input type="radio" id="wedding" name="type_of_job" value="Wedding">
+          <label for="wedding">Wedding</label>
+          <input type="radio" id="portrait" name="type_of_job" value="Portrait">
+          <label for="portrait">Portrait</label>
+          <input type="radio" id="event" name="type_of_job" value="Event">
+          <label for="event">Event</label>
+      </div>
+      
+      <label for="date-time">Date & Time</label>
+      <input type="date" id="date-time" name="date" placeholder="Select Date" required>
+      <input type="time" id="time" name="time" placeholder="Select Time" required>
+      
+      <label for="package">Package</label>
+      <select id="package" name="package" required>
+          <option value="basic">Basic Package</option>
+          <option value="standard">Standard Package</option>
+          <option value="premium">Premium Package</option>
+      </select>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      
+      <label for="location">Location (URL)</label>
+      <input type="url" id="location" name="location" placeholder="Google Maps URL" required>
+  
+      <button type="submit">Submit</button>
+  </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+              <a href="https://web.facebook.com/malcolmphotographer" target="_blank"><i class="ri-facebook-fill"></i></a>
+              <a href="https://web.facebook.com/messages/t/280340858743797" target="_blank"><i class="ri-messenger-fill"></i></a>
+              <a href="https://www.instagram.com/malcolm_photography/e" target="_blank"><i class="ri-instagram-fill"></i></a>
+              <a href="https://www.linkedin.com/in/sashan-fernando-b91a71235/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          </div>
+      </div>
+      <div class="footer-contact">
+          <h4>Contact Details</h4>
+          <p>Email: <a href="mailto:samithasashan2002@gmail.com">malcolmlismore@gmail.com</a></p>
+          <p>Phone: <a href="tel:+94721362773">+44 1234 567890</a></p>
+          <p>Address: 123 Photography Lane, North West Coast, Scotland</p>
+      </div>
+      <div class="footer-contact-form">
+          <h4>Contact Us</h4>
+          <form id="footer-contact-form">
+              <input type="email" name="user_email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Malcolm Lismore Photography. All rights reserved.</p>
+      <p>Designed by <a href="https://www.linkedin.com/in/sashan-fernando-b91a71235/" target="_blank">Sashan Fernando</a></p>
+  </div>
+</footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+(function() {
+  emailjs.init("zRUyhECI3G-_bQHRf"); 
+})();
+
+document.getElementById('footer-contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  emailjs.sendForm('service_yrui98i', 'template_y6xaipk', this)
+    .then(function(response) {
+      alert('Message sent successfully!');
+    }, function(error) {
+      alert('Failed to send the message. Please try again.');
+    });
+});
+</script>
+
+<script>
+  document.querySelector('.edit-enquiry-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const formData = new FormData(this);
+
+    fetch('../edit_inquiry.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert(data.message);
+        } else {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        alert('There was an error processing your request. Please try again.');
+        console.error('Error:', error);
+    });
+});
+
+</script>
+</body>
+</html>

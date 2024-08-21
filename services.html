@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malcolm Lismore Photography - Services</title>
+  <link rel="stylesheet" href="../css/services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="../../logo1.jpeg" alt="Malcolm Lismore Photography">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+ 
+  <section class="service-section">
+    <h2>Weddings</h2>
+    <div class="service-content">
+      <div class="service-text">
+        <p>Celebrate your love story with Malcolm Lismore Photography's exquisite wedding photography services. Our team is dedicated to capturing the essence of your special day, from the magical first look to the heartfelt exchange of vows. We ensure every moment is immortalized in stunning photographs. With wedding packages starting at $1500, we offer a range of customizable options to suit your needs. Let us turn your wedding day into a timeless visual narrative filled with love, laughter, and cherished memories...</p>
+        
+        <table class="service-table">
+          <tr>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Basic Package</td>
+            <td>Ceremony coverage, including candid shots and portraits</td>
+            <td>$1500</td>
+          </tr>
+          <tr>
+            <td>Standard Package</td>
+            <td>Full day coverage, pre-wedding shoot, and post-wedding album</td>
+            <td>$2500</td>
+          </tr>
+          <tr>
+            <td>Premium Package</td>
+            <td>All-day coverage, engagement shoot, custom album</td>
+            <td>$3500</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="service-image">
+        <img src="../../wedding.jpg" alt="Wedding">
+      </div>
+    </div>
+    <button class="more-pictures-btn" onclick="openPopup('wedding')">View More Pictures</button>
+  </section>
+
+  
+  <section class="service-section">
+    <h2>Portraits</h2>
+    <div class="service-content">
+      <div class="service-image">
+        <img src="../../Portrait1.jpg" alt="Portrait">
+      </div>
+      <div class="service-text">
+        <p>Discover the art of portraiture with Malcolm Lismore Photography. Whether it's a solo portrait, family photo, or professional headshot, our skilled photographers bring out the best in every subject. Prices for portrait sessions begin at $200, including a one-hour shoot, editing, and a selection of high-quality digital images. We focus on capturing your unique personality and style, creating portraits that are both timeless and expressive. Trust Malcolm Lismore Photography to turn your individuality into captivating visual art...</p>
+        <table class="service-table">
+          <tr>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Basic Package</td>
+            <td>Studio session, 10 edited images</td>
+            <td>$200</td>
+          </tr>
+          <tr>
+            <td>Standard Package</td>
+            <td>Outdoor session, 20 edited images</td>
+            <td>$400</td>
+          </tr>
+          <tr>
+            <td>Premium Package</td>
+            <td>Multiple locations, 30 edited images</td>
+            <td>$600</td>
+          </tr>
+        </table>
+      </div>
+      <div class="service-image">
+        <img src="../../Portrait2.jpg" alt="Portrait">
+      </div>
+    </div>
+    <button class="more-pictures-btn" onclick="openPopup('portrait')">View More Pictures</button>
+  </section>
+
+ 
+  <section class="service-section">
+    <h2>Special Events</h2>
+    <div class="service-content">
+      <div class="service-text">
+        <p>Make your special occasions unforgettable with Malcolm Lismore Photography's event coverage. From milestone birthdays to corporate events, we provide comprehensive coverage that ensures every detail and joyous moment is captured. Our packages start at $500, covering a three-hour event with editing and a gallery of digital images. With our professional expertise, we ensure that every significant detail is documented, allowing you to relive the magic of your special events for years to come...</p>
+        <table class="service-table">
+          <tr>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Basic Event</td>
+            <td>Coverage of events, digital photos, 2 hours</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Standard Event</td>
+            <td>Coverage of events, photo album, 4 hours</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>Red Carpet</td>
+            <td>Special event coverage with red carpet access</td>
+            <td>$2000</td>
+          </tr>
+        </table>
+      </div>
+      <div class="service-image">
+        <img src="../../event.jpg" alt="Special Event">
+      </div>
+    </div>
+    <button class="more-pictures-btn" onclick="openPopup('event')">View More Pictures</button>
+  </section>
+</main>
+
+<div id="picture-popup" class="popup-modal">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h3 id="popup-title">Gallery</h3> 
+    <div id="popup-gallery" class="popup-gallery">
+      
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+              <a href="https://web.facebook.com/malcolmphotographer" target="_blank"><i class="ri-facebook-fill"></i></a>
+              <a href="https://web.facebook.com/messages/t/280340858743797" target="_blank"><i class="ri-messenger-fill"></i></a>
+              <a href="https://www.instagram.com/malcolm_photography/e" target="_blank"><i class="ri-instagram-fill"></i></a>
+              <a href="https://www.linkedin.com/in/sashan-fernando-b91a71235/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          </div>
+      </div>
+      <div class="footer-contact">
+          <h4>Contact Details</h4>
+          <p>Email: <a href="mailto:samithasashan2002@gmail.com">malcolmlismore@gmail.com</a></p>
+          <p>Phone: <a href="tel:+94721362773">+44 1234 567890</a></p>
+          <p>Address: 123 Photography Lane, North West Coast, Scotland</p>
+      </div>
+      <div class="footer-contact-form">
+          <h4>Contact Us</h4>
+          <form id="footer-contact-form">
+              <input type="email" name="user_email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Malcolm Lismore Photography. All rights reserved.</p>
+      <p>Designed by <a href="https://www.linkedin.com/in/sashan-fernando-b91a71235/" target="_blank">Sashan Fernando</a></p>
+  </div>
+</footer>
+
+<script>
+  function openPopup(category) {
+    const popup = document.getElementById('picture-popup');
+    const gallery = document.getElementById('popup-gallery');
+    const title = document.getElementById('popup-title');
+  
+   
+    gallery.innerHTML = '';
+
+    if (category === 'wedding') {
+    title.textContent = 'Wedding Gallery';
+  } else if (category === 'portrait') {
+    title.textContent = 'Portrait Gallery';
+  } else if (category === 'event') {
+    title.textContent = 'Event Gallery';
+  }
+  
+    
+    let images = [];
+    if (category === 'wedding') {
+      images = ['../../wedding9.jpg', '../../wedding1.jpg', '../../wedding2.jpg',
+                '../../wedding3.jpg', '../../wedding4.jpg', '../../wedding5.jpg',
+                '../../wedding6.jpg', '../../wedding7.jpg', '../../wedding8.jpg',
+                '../../wedding20.jpg', '../../wedding10.jpg', '../../wedding11.jpg',
+                '../../wedding12.jpg', '../../wedding13.jpg', '../../wedding14.jpg',
+                '../../wedding15.jpg', '../../wedding16.jpg', '../../wedding17.jpg',
+                '../../wedding18.jpg', '../../wedding19.jpg', '../../wedding20.jpg'
+      ]; 
+    } else if (category === 'portrait') {
+      images = ['../../Portrait1.jpg', '../../Portrait2.jpg', '../../Portrait3.jpg',
+                '../../Portrait4.jpg', '../../Portrait5.jpg', '../../Portrait6.jpg',
+                '../../Portrait7.jpg', '../../Portrait8.jpg', '../../Portrait9.jpg',
+                '../../Portrait10.jpg', '../../Portrait11.jpg', '../../Portrait12.jpg',
+                '../../Portrait13.jpg', '../../Portrait14.jpg', '../../Portrait15.jpg',
+                '../../Portrait16.jpg', '../../Portrait17.jpg', '../../Portrait18.jpg',
+                '../../Portrait19.jpg', '../../Portrait20.jpg', '../../Portrait21.jpg'
+      ]; 
+    } else if (category === 'event') {
+      images = ['../../event21.jpg', '../../event1.jpg', '../../event2.jpg',
+                '../../event3.jpg', '../../event4.jpg', '../../event5.jpg',
+                '../../event6.jpg', '../../event14.jpg', '../../event8.jpg',
+                '../../event9.jpg', '../../event10.jpg', '../../event11.jpg',
+                '../../event12.jpg', '../../event13.jpg', '../../event14.jpg',
+                '../../event15.jpg', '../../event16.jpg', '../../event17.jpg',
+                '../../event18.jpg', '../../event19.jpg', '../../event20.jpg'
+      ]; 
+    }
+  
+    images.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = category;
+      gallery.appendChild(img);
+    });
+  
+    popup.style.display = 'block';
+  }
+  
+  function closePopup() {
+    document.getElementById('picture-popup').style.display = 'none';
+  }
+  </script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("zRUyhECI3G-_bQHRf"); 
+    })();
+  
+    document.getElementById('footer-contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+  
+      emailjs.sendForm('service_yrui98i', 'template_y6xaipk', this)
+        .then(function(response) {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('Failed to send the message. Please try again.');
+        });
+    });
+  </script>
+</body>
+</html>
