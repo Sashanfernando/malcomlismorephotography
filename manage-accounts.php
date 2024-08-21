@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Manage Accounts</title>
-    <link rel="stylesheet" href="css/manage-accounts.css">
+    <link rel="stylesheet" href="manage-accounts.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="../logo1.jpeg" alt="Logo">
+        <img src="logo1.jpeg" alt="Logo">
     </div>
     <nav>
         <ul>
-            <li><a href="html/index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-                <a href="html/services.html" class="dropbtn">Services</a>
+                <a href="services.html" class="dropbtn">Services</a>
                 <div class="dropdown-content">
-                    <a href="html/services.html">Weddings</a>
-                    <a href="html/services.html">Portraits</a>
-                    <a href="html/services.html">Special Events</a>
+                    <a href="services.html">Weddings</a>
+                    <a href="services.html">Portraits</a>
+                    <a href="services.html">Special Events</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="html/gallery.html" class="dropbtn">Gallery</a>
+                <a href="gallery.html" class="dropbtn">Gallery</a>
                 <div class="dropdown-content">
-                    <a href="html/gallery.html">Landscape</a>
-                    <a href="html/gallery.html">Wildlife</a>
-                    <a href="html/gallery.html">Coastal Birds</a>
+                    <a href="gallery.html">Landscape</a>
+                    <a href="gallery.html">Wildlife</a>
+                    <a href="gallery.html">Coastal Birds</a>
                 </div>
             </li>
-            <li><a href="html/login.html">Sign In</a></li>
+            <li><a href="login.html">Sign In</a></li>
         </ul>
     </nav>
 </header>
@@ -40,10 +40,10 @@
 <main class="admin-dashboard">
     <aside class="sidebar">
         <ul>
-            <li><a href="html/admin-dashboard.html">Upload New Images</a></li>
+            <li><a href="admin-dashboard.html">Upload New Images</a></li>
             <li><a href="delete-image.php">Delete Images</a></li>
             <li><a href="manage-enquiries.php">Manage Enquiries</a></li>
-            <li><a href="html/edit-profile.html">Edit Profile</a></li>
+            <li><a href="edit-profile.html">Edit Profile</a></li>
             <li><a href="manage-accounts.php">Manage Accounts</a></li>
             <li><a href="manage-testimonials.php">Manage Testimonials</a></li>
         </ul>
@@ -91,8 +91,8 @@
                             <td>{$row['contact']}</td>
                             <td>{$row['email']}</td>
                             <td>{$row['username']}</td>";
-                        if (!empty($row['profile_picture']) && file_exists('../uploads/' . $row['profile_picture'])) {
-                            echo "<td><img src='../uploads/{$row['profile_picture']}' alt='Profile Picture' width='50' height='50'></td>";
+                        if (!empty($row['profile_picture']) && file_exists('uploads/' . $row['profile_picture'])) {
+                            echo "<td><img src='uploads/{$row['profile_picture']}' alt='Profile Picture' width='50' height='50'></td>";
                         } else {
                             echo "<td>No picture</td>";
                         }
