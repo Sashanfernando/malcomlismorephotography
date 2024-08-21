@@ -91,7 +91,7 @@ nav ul li a:hover::after {
 }
 
 .banner {
-    background: url('../../pic6.jpg') no-repeat center center/cover;
+    background: url('pic6.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 0;
