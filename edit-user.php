@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($profile_picture_error === 0) {
                 if ($profile_picture_size < 100000000) {
                     $profile_picture_new_name = uniqid('', true) . "." . $profile_picture_actual_ext;
-                    $profile_picture_destination = '../uploads/' . $profile_picture_new_name;
+                    $profile_picture_destination = 'uploads/' . $profile_picture_new_name;
                     move_uploaded_file($profile_picture_tmp_name, $profile_picture_destination);
                 } else {
                     $response = ['success' => false, 'message' => 'Your profile picture is too large.'];
