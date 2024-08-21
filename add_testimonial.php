@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $allowedfileExtensions = array('jpg', 'gif', 'png', 'jpeg');
         if (in_array($fileExtension, $allowedfileExtensions)) {
-            $uploadFileDir = __DIR__ . '/../uploaded_images/';
+            $uploadFileDir = __DIR__ . 'uploaded_images/';
             if (!is_dir($uploadFileDir)) {
                 mkdir($uploadFileDir, 0777, true);  
             }
