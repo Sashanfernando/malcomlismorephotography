@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (in_array($profile_picture_ext, $allowed)) {
             if ($profile_picture_size < 10000000) { // Limit to 1MB
                 $profile_picture_new_name = uniqid('', true) . "." . $profile_picture_ext;
-                $profile_picture_destination = '../uploads/' . $profile_picture_new_name;
+                $profile_picture_destination = 'uploads/' . $profile_picture_new_name;
 
                 if (move_uploaded_file($profile_picture_tmp_name, $profile_picture_destination)) {
                     $profile_picture_path = $profile_picture_destination;
