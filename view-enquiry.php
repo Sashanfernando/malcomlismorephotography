@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Dashboard - View Submitted Enquiries</title>
-    <link rel="stylesheet" href="css/view-enquiry.css">
+    <link rel="stylesheet" href="view-enquiry.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="../logo1.jpeg" alt="Logo">
+        <img src="logo1.jpeg" alt="Logo">
     </div>
     <nav>
         <ul>
-            <li><a href="html/index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-                <a href="html/services.html" class="dropbtn">Services</a>
+                <a href="services.html" class="dropbtn">Services</a>
                 <div class="dropdown-content">
-                    <a href="html/services.html">Weddings</a>
-                    <a href="html/services.html">Portraits</a>
-                    <a href="html/services.html">Special Events</a>
+                    <a href="services.html">Weddings</a>
+                    <a href="services.html">Portraits</a>
+                    <a href="services.html">Special Events</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="html/gallery.html" class="dropbtn">Gallery</a>
+                <a href="gallery.html" class="dropbtn">Gallery</a>
                 <div class="dropdown-content">
-                    <a href="html/gallery.html">Landscape</a>
-                    <a href="html/gallery.html">Wildlife</a>
-                    <a href="html/gallery.html">Coastal Bird</a>
+                    <a href="gallery.html">Landscape</a>
+                    <a href="gallery.html">Wildlife</a>
+                    <a href="gallery.html">Coastal Bird</a>
                 </div>
             </li>
-            <li><a href="html/login.html">Sign In</a></li>
+            <li><a href="login.html">Sign In</a></li>
         </ul>
     </nav>
 </header>
@@ -40,12 +40,12 @@
 <main class="dashboard">
     <aside class="sidebar">
         <ul>
-            <li><a href="html/create-enquiry.html">Create a new Enquiry</a></li>
+            <li><a href="create-enquiry.html">Create a new Enquiry</a></li>
             <li><a href="view-enquiry.php">Submitted Enquiries</a></li>
-            <li><a href="html/edit-enquiry.html">Edit existing Enquiries</a></li>
-            <li><a href="html/add-testimonials.html">Submit a Testimonial</a></li>
-            <li><a href="html/edit-user.html">Edit User Profile</a></li>
-            <li><a href="html/view-map.html">View Google Maps</a></li>
+            <li><a href="edit-enquiry.html">Edit existing Enquiries</a></li>
+            <li><a href="add-testimonials.html">Submit a Testimonial</a></li>
+            <li><a href="edit-user.html">Edit User Profile</a></li>
+            <li><a href="view-map.html">View Google Maps</a></li>
         </ul>
     </aside>
 
