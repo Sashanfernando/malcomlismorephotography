@@ -4,7 +4,7 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('../../landscape8.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('landscape8.jpg') no-repeat center center/cover;
 }
 
 header {
