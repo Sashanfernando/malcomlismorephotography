@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         
         if ($row['profile_picture']) {
-            $row['profile_picture'] = '../../uploaded_images/' . $row['profile_picture'];
+            $row['profile_picture'] = 'uploaded_images/' . $row['profile_picture'];
         } else {
             $row['profile_picture'] = 'default_profile_picture.jpg';  
         }
