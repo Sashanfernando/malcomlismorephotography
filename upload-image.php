@@ -1,6 +1,6 @@
 <?php
 
-$targetDir = __DIR__ . "/../uploads/";
+$targetDir = __DIR__ . "uploads/";
 
 if (!is_dir($targetDir)) {
     if (!mkdir($targetDir, 0755, true)) {
