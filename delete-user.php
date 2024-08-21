@@ -21,7 +21,7 @@ if (isset($_POST['user_id'])) {
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        $profile_picture_path = '../uploads/' . $row['profile_picture'];
+        $profile_picture_path = 'uploads/' . $row['profile_picture'];
 
         
         $delete_sql = "DELETE FROM users WHERE id = '$user_id'";
