@@ -95,7 +95,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 80px);
-    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('../../landscape16.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('landscape16.jpg') no-repeat center center/cover;
 }
 
 .login-form {
