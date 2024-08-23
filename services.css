@@ -349,3 +349,144 @@ footer .social-icons a:hover {
 }
 
 
+#scrollToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    background-color: #555; 
+    color: white;
+    padding: 15px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+#scrollToTopBtn:hover {
+    background-color: #333; 
+}
+
+
+/* Media Queries */
+
+/* Tablets and small desktops */
+@media screen and (max-width: 992px) {
+    .service-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-text, .service-image {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-nav, .footer-contact, .footer-social, .footer-contact-form {
+        margin: 10px 0;
+    }
+   
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 8px 0;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .service-content {
+        flex-direction: column;
+    }
+
+    .service-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-nav, .footer-contact, .footer-social, .footer-contact-form {
+        flex: 1 100%;
+        margin: 10px 0;
+        align-items: center;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-contact-form input[type="email"],
+    .footer-contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* Small smartphones */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .service-section {
+        padding: 20px 10px;
+    }
+
+    .service-text {
+        font-size: 14px;
+    }
+
+    .service-image img {
+        max-width: 90%;
+    }
+
+    .footer-nav ul li a {
+        font-size: 14px;
+    }
+
+    .footer-contact p,
+    .footer-nav ul li a {
+        font-size: 12px;
+    }
+
+    .footer-contact-form h4,
+    .footer-contact-form button {
+        font-size: 16px;
+    }
+
+    .popup-content {
+        width: 90%;
+        margin-top: 30%;
+    }
+}
+

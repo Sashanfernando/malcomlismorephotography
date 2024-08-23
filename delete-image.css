@@ -297,3 +297,77 @@ footer .social-icons a:hover {
     color: #d06842;
     transform: scale(1.2);
 }
+
+#scrollToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    background-color: #555; 
+    color: white;
+    padding: 15px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+#scrollToTopBtn:hover {
+    background-color: #333; 
+}
+
+
+@media  (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+}
+@media (max-width: 768px) {
+    .admin-dashboard {
+        flex-direction: column;
+        
+    }
+
+    .sidebar {
+        width: auto;
+        min-height: calc(50vh - 80px);
+        padding: 10px;
+        
+    }
+
+  
+}
+
+
+@media  (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-nav, .footer-contact, .footer-social, .footer-contact-form {
+        margin: 10px 0;
+    }
+
+    .footer-nav h4, .footer-contact h4, .footer-social h4, .footer-contact-form h4 {
+        font-size: 20px;
+    }
+}

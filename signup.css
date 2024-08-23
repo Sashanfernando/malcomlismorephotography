@@ -4,7 +4,7 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('landscape17.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('../../landscape17.jpg') no-repeat center center/cover;
 }
 
 header {
@@ -320,4 +320,134 @@ footer {
 footer .social-icons a:hover {
     color: #e87c4c;
     transform: scale(1.2);
+}
+
+#scrollToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    background-color: #555; 
+    color: white;
+    padding: 15px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+#scrollToTopBtn:hover {
+    background-color: #333; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .signup-container {
+        width: 90%;
+        margin: 80px auto 20px auto;
+    }
+
+    .signup-form {
+        padding: 30px;
+    }
+
+    .signup-form label,
+    .signup-form input,
+    .signup-form select,
+    .signup-form button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .signup-form h2 {
+        font-size: 22px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+      text-align: center;
+    }
+
+    .footer-nav, .footer-contact, .footer-social, .footer-contact-form {
+        margin: 10px 0;
+    }
+
+    .footer-nav h4, .footer-contact h4, .footer-social h4, .footer-contact-form h4 {
+        font-size: 20px;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and below) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo img {
+        height: 40px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .signup-container {
+        padding: 15px;
+    }
+
+    .signup-form {
+        padding: 20px;
+    }
+
+    .signup-form h2 {
+        font-size: 20px;
+    }
+
+    .signup-form label,
+    .signup-form input,
+    .signup-form select,
+    .signup-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Larger Screens (Desktops, 1024px and above) */
+@media (min-width: 1024px) {
+    .signup-container {
+        width: 400px;
+        margin: 120px auto 20px auto;
+    }
+
+    .signup-form h2 {
+        font-size: 26px;
+    }
+
+    .signup-form label,
+    .signup-form input,
+    .signup-form select,
+    .signup-form button {
+        font-size: 16px;
+    }
 }
