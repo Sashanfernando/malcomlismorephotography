@@ -134,7 +134,7 @@ nav ul li:hover .dropdown-content {
     background-color: #3e3445;
     padding: 20px;
     border-radius: 10px;
-    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('../../landscape13.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('landscape13.jpg') no-repeat center center/cover;
 }
 
 .profile-form {
