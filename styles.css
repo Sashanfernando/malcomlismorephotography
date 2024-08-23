@@ -299,7 +299,7 @@ footer .social-icons a:hover {
 .services-slider {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('../../landscape1.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('landscape1.jpg') no-repeat center center/cover;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -387,7 +387,7 @@ footer .social-icons a:hover {
     margin: 0 auto;
     position: relative;
     padding: 40px;
-    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('../../landscape20.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(62, 47, 71, 0.9), rgba(108, 78, 123, 0.9)), url('landscape20.jpg') no-repeat center center/cover;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
